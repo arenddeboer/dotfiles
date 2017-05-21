@@ -16,9 +16,11 @@ Plugin 'VundleVim/Vundle.vim'
 " plugin on GitHub repo
 Plugin 'tpope/vim-fugitive'
 Plugin 'Valloric/YouCompleteMe'
-Plugin 'pangloss/vim-javascript'
+" Plugin 'pangloss/vim-javascript'
 Plugin 'editorconfig/editorconfig-vim'
-Plugin 'maksimr/vim-jsbeautify'
+"Plugin 'maksimr/vim-jsbeautify'
+Plugin 'sheerun/vim-polyglot'
+Plugin 'Chiel92/vim-autoformat'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -39,5 +41,5 @@ filetype plugin indent on    " required
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 " js beautify shortcut
-map <c-f> :call JsBeautify()<cr>
+map <c-f> ::Autoformat<cr>
 
