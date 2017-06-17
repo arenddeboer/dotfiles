@@ -43,3 +43,9 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 " js beautify shortcut
 map <c-f> ::Autoformat<cr>
 
+" fold on selection or on settings with F9
+inoremap <F9> <C-O>za
+nnoremap <F9> za
+onoremap <F9> <C-C>za
+vnoremap <F9> zf
+
